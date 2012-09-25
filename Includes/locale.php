@@ -45,6 +45,7 @@ function set_lang_by_user($lang)
 	setlocale(LC_ALL, $lang); 
 	bindtextdomain("app", "./locale");
 	textdomain("app");
+	bind_textdomain_codeset("app", 'UTF-8');
 }
 
 function set_emoncms_lang($userid)
